@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.container {
+  max-width: 320px;
+  margin: 32px auto;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 32px 0;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.list-item+.list-item {
+  margin-top: 16px;
+}
+
+.list-item__name {}
+
+.list-item__control {
+  display: flex;
+  gap: 4px;
+}
+
+.list-item__control button {
+  width: 24px;
+  cursor: pointer;
+}
+
+.list-item__control span {
+  /* margin-left: 4px; */
+}
+
+.total {
+  text-align: right;
+}
