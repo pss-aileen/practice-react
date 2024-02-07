@@ -8,31 +8,22 @@
   <!--
     page: https://react.dev/learn/installation
     html: https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html
+
+    json
+    https://jsonplaceholder.typicode.com/
+    https://dummyjson.com/
+    https://dummyapi.online/
+    https://codingwithharish.com/posts/json-sample-dataset/#social-media-json-sample-dataset
   -->
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="root"></div>
-
-  <script type="text/babel">
-    "use strict";
-    {
-      const App = () => {
-        return (
-          <h1>hello world</h1>
-        );
-      };
-      const container = document.getElementById("root");
-      const root = ReactDOM.createRoot(container);
-      root.render(
-        <App />
-      );
-    }
-  </script>
+  <script type="text/babel" src="script.js"></script>
 </body>
 
 </html>
