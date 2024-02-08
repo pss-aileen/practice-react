@@ -1,50 +1,70 @@
 "use strict";
 {
 
-  const ListItem = (props) => {
-    return (
-      <li>
-        {props.word}
-      </li>
-      )
-    };
-    
-    const List = () => {
-      const englishWords = ["Apple", "Mountain", "Chair", "Train", "Book", "Elephant", "Computer", "Orange", "Table", "Car", "Pen", "Sun", "Guitar", "Window", "Star", "Coffee", "Dog", "Moon", "Chair", "Plant", "Headphones", "Door", "Ocean", "Tree", "Key", "Clock", "Bird", "Basketball", "Pizza", "Shoes"];
-      
-      const lists = englishWords.map((word) => {
-        return (
-          <ListItem
-          word={word}
-          />
-        )});
+  const WordList = (props) => {
+    const wordList = props.wordList;
 
-      return (
-        <ul>
-          {lists}
-        </ul>
-      )
+    let renderedItems;
+
+    if (props.inputValues) {
+      const filteredItems = wordList.filter((word) => {
+        const regex = new RegExp(props.inputValues.toLowerCase());
+        return regex.test((word).toLowerCase());
+      });
+
+      renderedItems = filteredItems.map((word, index) => {
+        return (
+          <li key={index}>
+            {word}
+          </li>
+        )
+      });
+    } else {
+      renderedItems = wordList.map((word, index) => {
+        return (
+          <li key={index}>
+            {word}
+          </li>
+        )
+      });
     }
+
+    return (
+      <ul>
+        {renderedItems}
+      </ul>
+    );
+  };
 
   const App = () => {
+    const [input, setInput] = React.useState("");
 
-    const [inputKey, setInputKey] = React.useState("");
-  
-    function showKey(key) {
-      const inputValue = document.querySelector("input").value;
-      setInputKey(inputValue);
+    const words = [
+      "useState", "useEffect", "useContext", "useReducer", "useCallback",
+      "useMemo", "useRef", "useImperativeHandle", "useLayoutEffect", "forwardRef",
+      "memo", "Suspense", "lazy", "Fragment", "Component", "PureComponent", 
+      "createContext", "createElement", "cloneElement", "createFactory", "isValidElement",
+      "Children", "render", "hydrate", "unmountComponentAtNode", "findDOMNode",
+      "createPortal", "createRef", "StrictMode", "Profiler", "version", "PropTypes",
+      "DefaultProps", "useTransition", "useDeferredValue", "useOpaqueIdentifier",
+      "useMutableSource", "Interaction Tracing", "Blocking Mode", "Concurrent Mode",
+      "Error Boundaries", "Portals", "Context", "Refs", "Hooks", "Fragments"
+    ];
+    
+    function handleChange(e) {
+      setInput(e.target.value);
     }
-
-    function search() {
-    }
-
+      
     return (
       <>
+        <h1>English Words List</h1>
         <input
-          onKeyUp={e => showKey(e.key)}
+          onChange={(e) => handleChange(e)}
         />
-        <p>{inputKey}</p>
-        <List />
+        <WordList
+          wordList={words}
+          inputValues={input}
+        />
       </>
     );
   };
