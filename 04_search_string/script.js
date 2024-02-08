@@ -1,6 +1,18 @@
 "use strict";
 {
 
+  const wordList = [
+    "useState", "useEffect", "useContext", "useReducer", "useCallback",
+    "useMemo", "useRef", "useImperativeHandle", "useLayoutEffect", "forwardRef",
+    "memo", "Suspense", "lazy", "Fragment", "Component", "PureComponent", 
+    "createContext", "createElement", "cloneElement", "createFactory", "isValidElement",
+    "Children", "render", "hydrate", "unmountComponentAtNode", "findDOMNode",
+    "createPortal", "createRef", "StrictMode", "Profiler", "version", "PropTypes",
+    "DefaultProps", "useTransition", "useDeferredValue", "useOpaqueIdentifier",
+    "useMutableSource", "Interaction Tracing", "Blocking Mode", "Concurrent Mode",
+    "Error Boundaries", "Portals", "Context", "Refs", "Hooks", "Fragments"
+  ];
+
   const WordList = (props) => {
     const wordList = props.wordList;
 
@@ -38,31 +50,19 @@
 
   const App = () => {
     const [input, setInput] = React.useState("");
-
-    const words = [
-      "useState", "useEffect", "useContext", "useReducer", "useCallback",
-      "useMemo", "useRef", "useImperativeHandle", "useLayoutEffect", "forwardRef",
-      "memo", "Suspense", "lazy", "Fragment", "Component", "PureComponent", 
-      "createContext", "createElement", "cloneElement", "createFactory", "isValidElement",
-      "Children", "render", "hydrate", "unmountComponentAtNode", "findDOMNode",
-      "createPortal", "createRef", "StrictMode", "Profiler", "version", "PropTypes",
-      "DefaultProps", "useTransition", "useDeferredValue", "useOpaqueIdentifier",
-      "useMutableSource", "Interaction Tracing", "Blocking Mode", "Concurrent Mode",
-      "Error Boundaries", "Portals", "Context", "Refs", "Hooks", "Fragments"
-    ];
     
-    function handleChange(e) {
+    function handleInputChange(e) {
       setInput(e.target.value);
     }
       
     return (
       <>
-        <h1>English Words List</h1>
+        <h1>Search English Word</h1>
         <input
-          onChange={(e) => handleChange(e)}
+          onChange={(e) => handleInputChange(e)}
         />
         <WordList
-          wordList={words}
+          wordList={wordList}
           inputValues={input}
         />
       </>

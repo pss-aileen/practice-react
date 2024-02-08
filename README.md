@@ -5,8 +5,8 @@
 ## 作りたいもの、練習案
 
 - [ ] リアルタイム検索
-  - [ ] 簡単な文字列
-  - [ ] 犬 https://dog.ceo/dog-api/documentation/
+  - [x] 簡単な文字列
+  - [ ] 犬 https://dog.ceo/dog-api/documentation/ もしくは placeholder テキスト
 - [ ] 電卓
 - [ ] メモ帳
 - [ ] クイズアプリ
