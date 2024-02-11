@@ -1,5 +1,6 @@
 {
   "name": "practice-react",
+  "homepage": "https://pss-aileen.github.io/practice-react/test-basic-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,6 +29,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1"
   }
 }
