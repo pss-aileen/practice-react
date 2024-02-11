@@ -38,11 +38,8 @@ git push -u origin new-branch
 ```json
 {
   "name": "practice-react",
-   // 以下の test-basic-page を変更
   "homepage": "https://pss-aileen.github.io/practice-react/test-basic-page",
-  //...
   "scripts": {
-    // 以下の test-basic-page を変更
     "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"test-basic-page\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,6 +47,9 @@ git push -u origin new-branch
   },
 }
 ```
+
+- `test-basic-page` を好きな名称に変更変更すること
+- `project-001-name` など
 
 
 **以下でgh-pagesブランチにデプロイ**
