@@ -48,6 +48,7 @@ git push -u origin new-branch
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
+}
 ```
 
 
