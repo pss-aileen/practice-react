@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"test-basic-page\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
