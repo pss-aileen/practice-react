@@ -1,16 +1,10 @@
 {
   "files": {
-    "main.css": "/practice-react/test-basic-page/static/css/main.f855e6bc.css",
-    "main.js": "/practice-react/test-basic-page/static/js/main.f6d93da5.js",
-    "static/js/592.465ba8c0.chunk.js": "/practice-react/test-basic-page/static/js/592.465ba8c0.chunk.js",
-    "static/media/logo.svg": "/practice-react/test-basic-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/practice-react/test-basic-page/static/js/main.a021a6e1.js",
     "index.html": "/practice-react/test-basic-page/index.html",
-    "main.f855e6bc.css.map": "/practice-react/test-basic-page/static/css/main.f855e6bc.css.map",
-    "main.f6d93da5.js.map": "/practice-react/test-basic-page/static/js/main.f6d93da5.js.map",
-    "592.465ba8c0.chunk.js.map": "/practice-react/test-basic-page/static/js/592.465ba8c0.chunk.js.map"
+    "main.a021a6e1.js.map": "/practice-react/test-basic-page/static/js/main.a021a6e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.f6d93da5.js"
+    "static/js/main.a021a6e1.js"
   ]
 }
