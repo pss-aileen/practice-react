@@ -1,11 +1,11 @@
 {
   "name": "practice-react",
-  "homepage": "https://pss-aileen.github.io/practice-react/test-basic-page",
+  "homepage": "https://pss-aileen.github.io/practice-react/006-pokemon-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"test-basic-page\"",
+    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"project/006-pokemon-app\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
