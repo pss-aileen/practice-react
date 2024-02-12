@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"project/006-pokemon-app\"",
+    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\" -e \"006-pokemon-app\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
