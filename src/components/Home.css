@@ -1,0 +1,12 @@
+.home-table {
+  width: 100%;
+}
+
+.home-table th {
+  background: #eee;
+}
+
+.home-table th,
+.home-table td {
+  padding: 4px;
+}
