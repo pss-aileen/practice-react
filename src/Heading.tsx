@@ -1,11 +1,12 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useContext } from "react";
+import { LevelContext } from './LevelContext';
 
 interface HeadingProps {
   children: ReactNode;
-  level: ReactNode;
 }
 
-const Heading: React.FC<HeadingProps> = ({level, children}) => {
+const Heading: React.FC<HeadingProps> = ({ children }) => {
+  const level = useContext(LevelContext);
   switch (level) {
     case 1:
       return <h1>{children}</h1>;
