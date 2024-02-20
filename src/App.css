@@ -1,3 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
+  /* text-align: center; */
+  color: #333;
+}
+
+.site-title {
+  font-size: 20px;
   text-align: center;
+  margin: 0 0 16px;
+}
+
+
+.wrapper {
+  display: flex;
+  gap: 32px;
+  max-width: 960px;
+  height: 100vh;
+  width: calc(100% -32px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+}
+
+.pokemon-cards {
+  /* width: calc(100% - 32px); */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 32px 32px 124px 32px;
+
+}
+
+.my-pokemon {
+  padding: 32px 0;
+  width: 120px;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+.btns {
+  display: flex;
+  gap: 8px;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 32px;
+  width: fit-content;
+  margin: 0 auto;
+
+  button {
+    display: block;
+    width: 56px;
+    aspect-ratio: 1/1;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: .8;
+  }
+
+  button:hover {
+    opacity: .6;
+  }
 }

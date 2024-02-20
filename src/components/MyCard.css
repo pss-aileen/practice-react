@@ -1,0 +1,27 @@
+.myCard {
+  background: #eee;
+  border-radius: 50%;
+  /* width: calc((100% - (4 * 16px)) / 5); */
+  width: 100px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(200deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(0, 0, 0, 0.1) 100%);
+  border: 1px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.myCard+.myCard {
+  margin-top: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
